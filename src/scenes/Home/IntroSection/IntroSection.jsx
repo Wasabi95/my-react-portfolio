@@ -22,23 +22,26 @@ const IntroSection = () => {
 
           <div className={s.description}>
             <p>
-              I'm a Self-Taught React Developer with 3 years of
-              experience <br />
-              creating web apps 
+            As a self-taught React developer with 3 years of experience, 
+            </p>
+            <p>
+            I have successfully created full-stack applications using technologies such as:
             </p>
 
             <p>
-              My skills include proficiency in{' '}
+             
               <i>
                 <b className={s.purple}>
-                  TypeScript, React, Python, Javascript, AI, TensorFlow..
+                  TypeScript, React, Python, Javascript, AI, TensorFlow.<br/>
+                  Bootstrap, MongoDB, PostgreSQL, MySQL
                 </b>
               </i>
               <br />
-              and other relevant technologies. I have experience in
-              integrating various <br />
-              third-party libraries, API integration, push
-              notifications and analytics.
+              While my journey started as a hobby, I have built a portfolio on GitHub <br/>
+              showcasing my projects. 
+              Although I have not yet gained professional experience, <br/>
+              I am eager to apply my skills <br/>
+              in real-world scenarios and contribute as a software engineer.
             </p>
 
             <p>

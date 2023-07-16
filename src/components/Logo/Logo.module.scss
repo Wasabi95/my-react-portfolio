@@ -1,12 +1,15 @@
 :export { logoPrimary: var(--logo-primary); }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-@media (max-width: 600px) {
-    .container {
-      flex-direction: column; /* Stack items vertically */
-    }
-  
-    .container > * {
-      margin-bottom: 10px; /* Add spacing between logo and hamburger menu */
-    }
+// Logo.module.scss
+.logoContainer {
+  // Styles for larger devices
+
+  @media (max-width: 400px) {
+    display: none; // Hide the logo container in devices smaller than 400px
   }
+}
+
+.logoText {
+  // Styles for the logo text
+}

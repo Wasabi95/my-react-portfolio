@@ -29,66 +29,74 @@ import {
 const TechSkills = () => {
   return (
     <ul className={s.container}>
+       <li className={s.techIcon} style={{ color: 'rgb(247, 223, 30)' }}>
+          <DiJavascript1 />
+        </li>
+        
       <li className={s.techIcon}>
-        <DiJavascript1 />
+        <SiTypescript style={{ color: '#3178c6' }}/>
+      </li>
+      
+      <li className={s.techIcon}>
+        <DiNodejs style={{ color: '#026e00' }}/>
+      </li>
+      
+      <li className={s.techIcon}>
+        <DiReact style={{ color: '#61dafb' }}/>
       </li>
       <li className={s.techIcon}>
-        <SiTypescript />
+        <DiMongodb style={{ color: '#00ED64' }}/>
       </li>
+      
       <li className={s.techIcon}>
-        <DiNodejs />
+        <DiSass style={{ color: 'rgb(204, 102, 153)' }}/>
       </li>
+      
       <li className={s.techIcon}>
-        <DiReact />
+        <SiAmazonaws style={{ color: '#f90' }}/>
       </li>
+      
       <li className={s.techIcon}>
-        <DiMongodb />
-      </li>
-      <li className={s.techIcon}>
-        <DiSass />
-      </li>
-      <li className={s.techIcon}>
-        <SiAmazonaws />
-      </li>
-      <li className={s.techIcon}>
-        <SiRedux />
+        <SiRedux style={{ color: '#764abc' }}/>
       </li>
       <li className={s.techIcon}>
         <SiSocketdotio />
       </li>
+      
       <li className={s.techIcon}>
-        <DiGit />
+        <DiGit style={{ color: '#f14e32' }}/>
       </li>
+      
       <li className={s.techIcon}>
-        <DiPython />
+        <DiPython style={{ color: 'rgb(55, 118, 171)' }}/>
       </li>
-      <li className={s.techIcon}>
-        <DiBootstrap />
-      </li>
-      <li className={s.techIcon}>
-        <DiCss3 />
-      </li>
-      <li className={s.techIcon}>
-        <DiFirebase />
-      </li>
-      <li className={s.techIcon}>
-        <DiGithub />
-      </li>
-      <li className={s.techIcon}>
-        <DiPostgresql />
-      </li>
-      <li className={s.techIcon}>
-        <DiMysql />
-      </li>
-      <li className={s.techIcon}>
-        <DiHtml5 />
-      </li>
-      <li className={s.techIcon}>
-        <DiVisualstudio />
-      </li>
-      <li className={s.techIcon}>
-        <DiResponsive />
-      </li>  
+      <li className={s.techIcon} style={{ color: '#7952b3' }}>
+          <DiBootstrap />
+        </li>
+        <li className={s.techIcon} style={{ color: '#264de4' }}>
+          <DiCss3 />
+        </li>
+        <li className={s.techIcon} style={{ color: '#FFCB2B' }}>
+          <DiFirebase />
+        </li>
+        <li className={s.techIcon} style={{ color: 'purple' }}>
+          <DiGithub />
+        </li>
+        <li className={s.techIcon} style={{ color: '#336791' }}>
+          <DiPostgresql />
+        </li>
+        <li className={s.techIcon} style={{ color: '#00758F' }}>
+          <DiMysql />
+        </li>
+        <li className={s.techIcon} style={{ color: '#E34F26' }}>
+          <DiHtml5 />
+        </li>
+        <li className={s.techIcon} style={{ color: '#5C2D91' }}>
+          <DiVisualstudio />
+        </li>
+        <li className={s.techIcon} style={{ color: '#1E88E5' }}>
+          <DiResponsive />
+        </li>
 
     </ul>
   );

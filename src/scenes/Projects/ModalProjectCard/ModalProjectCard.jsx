@@ -27,6 +27,7 @@ const ModalProjectCard = () => {
           src={image.src}
           effect="blur"
           width="100%"
+         
           wrapperClassName={s.image}
           placeholderSrc={image.placeholderSrc}
         />
