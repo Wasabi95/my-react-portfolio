@@ -7,6 +7,7 @@ import {
 import { CgFileDocument } from 'react-icons/cg';
 import { routes } from '../../../routes/BaseRoutes';
 import { NavLink } from 'react-router-dom';
+import { TiBook } from 'react-icons/ti';
 
 const NavLinks = () => {
   return (
@@ -30,6 +31,12 @@ const NavLinks = () => {
           <AiOutlineFundProjectionScreen />
           Projects
         </NavLink>
+      </li>
+      <li>
+      <NavLink to={routes.PROJECTS}>
+    <TiBook />
+    Education & Certifications
+  </NavLink>
       </li>
 
      {/*  <li>
