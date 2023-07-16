@@ -1,5 +1,5 @@
 import s from './IntroSection.module.scss';
-import avatar from '../../../assets/avatar.svg';
+import programmer from "../../../assets/programmer.svg"
 import { AiFillGithub } from 'react-icons/ai';
 import {
   FaFacebookSquare,
@@ -52,24 +52,13 @@ const IntroSection = () => {
             </p>
           </div>
         </div>
-    {/*     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#2ecc71" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-          <line x1="8" y1="21" x2="16" y2="21"></line>
-          <line x1="12" y1="17" x2="12" y2="21"></line>         
-          
-        </svg> */}
-
-        
-
-       <Tilt trackOnWindow={true}>
+  
+         <div trackOnWindow={true}>
           <LazyLoadImage alt="avatar" effect="blur" />
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#2ecc71" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-          <line x1="8" y1="21" x2="16" y2="21"></line>
-          <line x1="12" y1="17" x2="12" y2="21"></line>         
-          
-        </svg>
-        </Tilt> 
+              <img src={programmer} className="img-fluid" alt="avatar" />
+            </div>
+
+
       </div>
 
       <div className={s.introSocial}>
