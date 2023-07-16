@@ -1,4 +1,4 @@
-import s from './TechSkillsCertification.module.scss';
+/* import s from './TechSkillsCertification.module.scss';
 import {
   DiJavascript1,
   DiReact,
@@ -50,54 +50,90 @@ const TechCertificationsSkills = () => {
       
       <li className={s.techIcon}>
         <DiSass style={{ color: 'rgb(204, 102, 153)' }}/>
-      </li>
-      
-      <li className={s.techIcon}>
-        <SiAmazonaws style={{ color: '#f90' }}/>
-      </li>
-      
-      <li className={s.techIcon}>
-        <SiRedux style={{ color: '#764abc' }}/>
-      </li>
-      <li className={s.techIcon}>
-        <SiSocketdotio />
-      </li>
-      
-      <li className={s.techIcon}>
-        <DiGit style={{ color: '#f14e32' }}/>
-      </li>
-      
-      <li className={s.techIcon}>
-        <DiPython style={{ color: 'rgb(55, 118, 171)' }}/>
-      </li>
-      <li className={s.techIcon} style={{ color: '#7952b3' }}>
-          <DiBootstrap />
-        </li>
-        <li className={s.techIcon} style={{ color: '#264de4' }}>
-          <DiCss3 />
-        </li>
-        <li className={s.techIcon} style={{ color: '#FFCB2B' }}>
-          <DiFirebase />
-        </li>
-        <li className={s.techIcon} style={{ color: 'purple' }}>
-          <DiGithub />
-        </li>
-        <li className={s.techIcon} style={{ color: '#336791' }}>
-          <DiPostgresql />
-        </li>
-        <li className={s.techIcon} style={{ color: '#00758F' }}>
-          <DiMysql />
-        </li>
-        <li className={s.techIcon} style={{ color: '#E34F26' }}>
-          <DiHtml5 />
-        </li>
-        <li className={s.techIcon} style={{ color: '#5C2D91' }}>
-          <DiVisualstudio />
-        </li>
-        <li className={s.techIcon} style={{ color: '#1E88E5' }}>
-          <DiResponsive />
-        </li>
+      </li>      
+   
 
+    </ul>
+  );
+};
+
+export default TechCertificationsSkills; */
+import React from 'react';
+import s from './TechSkillsCertification.module.scss';
+import {
+  DiJavascript1,
+  DiReact,
+  DiNodejs,
+  DiMongodb,
+  DiGit,
+  DiSass,
+  Dipython,
+  DiPython,
+  DiBootstrap,
+  DiCss3,
+  DiFirebase,
+  DiGithub,
+  DiPostgresql,
+  DiMysql,
+  DiHtml5,
+  DiVisualstudio,
+  DiResponsive,
+  DiNpm,
+} from 'react-icons/di';
+import {
+  SiTypescript,
+  SiRedux,
+  SiSocketdotio,
+  SiAmazonaws,
+} from 'react-icons/si';
+
+const TechCertificationsSkills = () => {
+  const certifications = [
+    {
+      name: 'JavaScript Certification',
+      description: 'Certified in JavaScript by XYZ University',
+      icon: <DiJavascript1 style={{ color: 'rgb(247, 223, 30)' }} />,
+    },
+    {
+      name: 'TypeScript Certification',
+      description: 'Certified in TypeScript by ABC University',
+      icon: <SiTypescript style={{ color: '#3178c6' }} />,
+    },
+    {
+        name: 'JavaScript Certification',
+        description: 'Certified in JavaScript by XYZ University',
+        icon: <DiNodejs style={{ color: 'rgb(247, 223, 30)' }} />,
+      },
+      {
+        name: 'TypeScript Certification',
+        description: 'Certified in TypeScript by ABC University',
+        icon: <DiReact style={{ color: '#3178c6' }} />,
+      },
+      {
+        name: 'JavaScript Certification',
+        description: 'Certified in JavaScript by XYZ University',
+        icon: <DiHtml5 style={{ color: 'rgb(247, 223, 30)' }} />,
+      },
+      {
+        name: 'TypeScript Certification',
+        description: 'Certified in TypeScript by ABC University',
+        icon: <DiPython style={{ color: '#3178c6' }} />,
+      },
+    // Add more certifications here
+  ];
+
+  return (
+    <ul className={s.container}>
+      {certifications.map((certification, index) => (
+        <li className={s.techIcon} key={index}>
+          {certification.icon}
+          <div className={s.certificationInfo}>
+            <h3 className={s.certificationName}>{certification.name}</h3>
+            <p className={s.certificationDescription}>{certification.description}</p>
+            {/* Add more details and styling for each certification */}
+          </div>
+        </li>
+      ))}
     </ul>
   );
 };

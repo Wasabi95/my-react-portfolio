@@ -35,7 +35,7 @@ const NavLinks = () => {
       <li>
       <NavLink to={routes.EDUCATION}>
     <TiBook />
-    Education & Certifications
+    Certifications
   </NavLink>
       </li>
 
