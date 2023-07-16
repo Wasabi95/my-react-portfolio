@@ -6,6 +6,18 @@ import {
   DiMongodb,
   DiGit,
   DiSass,
+  Dipython,
+  DiPython,
+  DiBootstrap,
+  DiCss3,
+  DiFirebase,
+  DiGithub,
+  DiPostgresql,
+  DiMysql,
+  DiHtml5,
+  DiVisualstudio,
+  DiResponsive,
+  DiNpm,
 } from 'react-icons/di';
 import {
   SiTypescript,
@@ -47,6 +59,37 @@ const TechSkills = () => {
       <li className={s.techIcon}>
         <DiGit />
       </li>
+      <li className={s.techIcon}>
+        <DiPython />
+      </li>
+      <li className={s.techIcon}>
+        <DiBootstrap />
+      </li>
+      <li className={s.techIcon}>
+        <DiCss3 />
+      </li>
+      <li className={s.techIcon}>
+        <DiFirebase />
+      </li>
+      <li className={s.techIcon}>
+        <DiGithub />
+      </li>
+      <li className={s.techIcon}>
+        <DiPostgresql />
+      </li>
+      <li className={s.techIcon}>
+        <DiMysql />
+      </li>
+      <li className={s.techIcon}>
+        <DiHtml5 />
+      </li>
+      <li className={s.techIcon}>
+        <DiVisualstudio />
+      </li>
+      <li className={s.techIcon}>
+        <DiResponsive />
+      </li>  
+
     </ul>
   );
 };

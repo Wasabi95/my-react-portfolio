@@ -1,6 +1,7 @@
 import s from './About.module.scss';
 import BaseLayout from '../../layouts/BaseLayout/BaseLayout';
 import aboutPromoImg from '../../assets/about-promo.svg';
+import laptopImg from "../../assets/aboutx.png"
 import AboutTextCard from './AboutTextCard/AboutTextCard';
 import TechSkills from './TechSkills/TechSkills';
 import GithubActivity from './GithubActivity/GithubActivity';
@@ -18,9 +19,7 @@ const About = () => {
           </div>
 
           <div className={s.aboutImg}>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#f05696" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-          </svg>
+          <img src={laptopImg} alt="about" className="img-fluid" />
          </div>
 
         </div>
