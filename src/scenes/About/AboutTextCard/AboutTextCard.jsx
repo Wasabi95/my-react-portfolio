@@ -1,5 +1,13 @@
 import s from './AboutTextCard.module.scss';
 import { ImPointRight } from 'react-icons/im';
+import { FaCat } from 'react-icons/fa';
+
+const tiktokLinkStyle = {
+  textDecoration: 'underline',
+  color: '#FF3366',
+  fontWeight: "900",
+  
+};
 
 const AboutTextCard = () => {
   return (
@@ -25,9 +33,25 @@ const AboutTextCard = () => {
         <br />
         Outside of programming, I lead a fulfilling personal life. 
         <br />
-        I am happily married, We also have a lovely cat who brings 
+        I am happily married, We also have a four-legged 
         <br/>
-        joy to our home.
+        and furry son, my cat. <FaCat size={24} />
+        <br/>
+        , who has brought joy to our home.
+        <br/>
+        Want to get to know him better? 
+        <br/>
+        
+      Check out my{' '}
+      <a
+        target="_blank"
+        href="https://www.tiktok.com/@wasabithebengalcat?lang=en"
+        style={tiktokLinkStyle}
+      >
+        TikTok
+      </a>
+     
+       
         <br />
         In my free time, I enjoy a variety of activities,
         <br />

@@ -7,7 +7,7 @@ import s from './Logo.module.scss';
 
 
 const LOGO = {
-  logo_name: "<Andrey.C />",
+  logo_name: "<Andy.C />",
 };
 
 const Logo = ({ className }) => {
