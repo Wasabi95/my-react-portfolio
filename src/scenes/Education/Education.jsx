@@ -2,8 +2,9 @@ import s from '../About/About.module.scss';
 import BaseLayout from '../../layouts/BaseLayout/BaseLayout';
 import education from '../../assets/education (1).svg';
 import programmer from "../../assets/programmer.svg"
-import AboutTextCard from '../About/AboutTextCard/AboutTextCard';
-import TechSkills from "../About/TechSkills/TechSkills"
+import CertificationsCard from './CertificationsCard/CertificationsCard';
+import TechCertificationsSkills from './TechCertificationSkills/TechCertificationsSkills';
+
 import GithubActivity from '../About/GithubActivity/GithubActivity';
 
 const Education = () => {
@@ -13,9 +14,9 @@ const Education = () => {
         <div className={s.about}>
           <div className={s.aboutDescription}>
             <h1 className={s.title}>
-              Know Who <b className={s.purple}>I'M</b>
+              My Education and <b className={s.purple}>Certifications</b>
             </h1>
-            <AboutTextCard />
+            <CertificationsCard />
           </div>
 
           <div className={s.aboutImg}>
@@ -25,9 +26,9 @@ const Education = () => {
         </div>
 
         <h2 className={s.skills}>
-          Professional <b className={s.purple}>Skills</b>
+          Certifications <b className={s.purple}>Skills</b>
         </h2>
-        <TechSkills />
+        <TechCertificationsSkills />
 
         <h2 className={s.githubActivity}>
           Days I <b className={s.purple}>Code</b>
