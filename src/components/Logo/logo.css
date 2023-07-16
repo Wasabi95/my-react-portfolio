@@ -7,4 +7,13 @@
     display: flex;
     align-items: center;
   }
+  @media (max-width: 600px) {
+    .container {
+      flex-direction: column; /* Stack items vertically */
+    }
+  
+    .container > * {
+      margin-bottom: 10px; /* Add spacing between logo and hamburger menu */
+    }
+  }
   
