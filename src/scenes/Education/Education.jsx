@@ -14,7 +14,7 @@ const Education = () => {
         <div className={s.about}>
           <div className={s.aboutDescription}>
             <h1 className={s.title}>
-              My Education and <b className={s.purple}>Certifications</b>
+              My Education & <b className={s.purple}>Certifications</b>
             </h1>
             <CertificationsCard />
           </div>

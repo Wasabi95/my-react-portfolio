@@ -1,6 +1,5 @@
 import s from './IntroSection.module.scss';
 import programmer from "../../../assets/programmer.svg"
-import { Fade } from 'react-reveal';
 import { AiFillGithub } from 'react-icons/ai';
 import {
   FaFacebookSquare,
@@ -59,15 +58,10 @@ const IntroSection = () => {
           <line x1="12" y1="17" x2="12" y2="21"></line>         
           
         </svg> */}
-        {/*  <Tilt trackOnWindow={true}>
+         <Tilt trackOnWindow={true}>
           <LazyLoadImage alt="avatar" effect="blur" />
               <img src={programmer} className="img-fluid" alt="avatar" />
-            </Tilt> */}
-
-             <Fade>
-      <LazyLoadImage alt="avatar" effect="blur" src={programmer} className="img-fluid" />
-    </Fade> 
-
+            </Tilt>   
 
         
 {/* 
