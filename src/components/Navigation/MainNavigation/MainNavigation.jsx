@@ -16,7 +16,7 @@ const MainNavigation = () => {
 
   return (
     <>
-       <Logo className={s.desktop} /> 
+      <Logo className={s.desktop} /> 
 
       <nav className={s.desktop}>
         <NavLinks />
@@ -28,7 +28,11 @@ const MainNavigation = () => {
           <>
             <Burger onClick={toggleDrawer} />
 
-            {/* <Logo className={s.mobile} /> */}
+             <div className={s.mobile}>
+              <span className={s.symbol}>&lt;</span>
+              <span className={s.andyc}>Andy.C</span>
+              <span className={s.symbol}>/&gt;</span>
+            </div> 
 
             <BtnToggleTheme className={s.mobile} />
           </>
