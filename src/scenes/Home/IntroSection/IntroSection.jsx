@@ -58,11 +58,11 @@ const IntroSection = () => {
           <line x1="12" y1="17" x2="12" y2="21"></line>         
           
         </svg> */}
- {/*     <div trackOnWindow={true}>
+      <div trackOnWindow={true}>
   <LazyLoadImage alt="avatar" effect="blur" />
   <img src={programmer} alt="avatar" style={{ width: '300px', height: 'auto' }} />
 </div>
-  */}
+  
 
         
 {/* 

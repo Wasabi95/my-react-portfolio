@@ -18,10 +18,11 @@
   }
   .mobile {
     display: flex;
-    align-items: center;    
+    align-items: center;
     justify-content: space-between;
   }
 }
+
 @media (max-width: 400px) {
   .desktop {
     display: none;
@@ -32,5 +33,13 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 20px; /* Add margin below the logo */
+    font-size: 14px; /* Add the desired font size for smaller devices */
+  }
+}
+
+@media (min-aspect-ratio: 1/1) and (max-aspect-ratio: 1024/834) {
+  .desktop {
+    display: flex;
+    align-items: center;
   }
 }
