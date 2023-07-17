@@ -22,3 +22,15 @@
     justify-content: space-between;
   }
 }
+@media (max-width: 400px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; /* Add margin below the logo */
+  }
+}

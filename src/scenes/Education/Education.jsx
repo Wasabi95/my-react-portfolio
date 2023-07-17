@@ -4,6 +4,7 @@ import education from '../../assets/education (1).svg';
 import CertificationsCard from './CertificationsCard/CertificationsCard';
 import TechCertificationsSkills from './TechCertificationSkills/TechCertificationsSkills';
 
+
 import GithubActivity from '../About/GithubActivity/GithubActivity';
 
 const Education = () => {

@@ -1,67 +1,6 @@
-/* import s from './TechSkillsCertification.module.scss';
-import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiMongodb,
-  DiGit,
-  DiSass,
-  Dipython,
-  DiPython,
-  DiBootstrap,
-  DiCss3,
-  DiFirebase,
-  DiGithub,
-  DiPostgresql,
-  DiMysql,
-  DiHtml5,
-  DiVisualstudio,
-  DiResponsive,
-  DiNpm,
-} from 'react-icons/di';
-import {
-  SiTypescript,
-  SiRedux,
-  SiSocketdotio,
-  SiAmazonaws,
-} from 'react-icons/si';
-
-const TechCertificationsSkills = () => {
-  return (
-    <ul className={s.container}>
-       <li className={s.techIcon} style={{ color: 'rgb(247, 223, 30)' }}>
-          <DiJavascript1 />
-        </li>
-        
-      <li className={s.techIcon}>
-        <SiTypescript style={{ color: '#3178c6' }}/>
-      </li>
-      
-      <li className={s.techIcon}>
-        <DiNodejs style={{ color: '#026e00' }}/>
-      </li>
-      
-      <li className={s.techIcon}>
-        <DiReact style={{ color: '#61dafb' }}/>
-      </li>
-      <li className={s.techIcon}>
-        <DiMongodb style={{ color: '#00ED64' }}/>
-      </li>
-      
-      <li className={s.techIcon}>
-        <DiSass style={{ color: 'rgb(204, 102, 153)' }}/>
-      </li>      
-   
-
-    </ul>
-  );
-};
-
-export default TechCertificationsSkills; */
 import React from 'react';
 import s from './TechSkillsCertification.module.scss';
 import {
-  DiJavascript1,
   DiReact,
   DiNodejs,
   DiMongodb,
@@ -80,45 +19,59 @@ import {
   DiResponsive,
   DiNpm,
 } from 'react-icons/di';
-import {
-  SiTypescript,
-  SiRedux,
-  SiSocketdotio,
-  SiAmazonaws,
-} from 'react-icons/si';
+import { SiTypescript, SiRedux, SiSocketdotio, SiAmazonaws } from 'react-icons/si';
+import { FaGoogle } from 'react-icons/fa';
 
 const TechCertificationsSkills = () => {
   const certifications = [
     {
-      name: 'JavaScript Certification',
-      description: 'Certified in JavaScript by XYZ University',
-      icon: <DiJavascript1 style={{ color: 'rgb(247, 223, 30)' }} />,
+      name: 'Google IT Support Professional Certificate',
+      description:
+        'The course covers a wide range of topics related to IT, including: Troubleshooting, Networking, Operating systems, System administration, Automation and scripting, and Security.',
+      icon: <FaGoogle style={{ color: '#4285F4', fontSize: '48px' }} />,
+      certificationLink:
+        'https://www.coursera.org/account/accomplishments/specialization/certificate/6KACSVEZGVM4',
     },
     {
       name: 'TypeScript Certification',
-      description: 'Certified in TypeScript by ABC University',
-      icon: <SiTypescript style={{ color: '#3178c6' }} />,
+      description:
+        'The course covers a wide range of topics related to IT, including: Troubleshooting, Networking, Operating systems, System administration, Automation and scripting, and Security.',
+      icon: <SiTypescript style={{ color: '#3178c6', fontSize: '48px' }} />,
+      certificationLink:
+        'https://www.coursera.org/account/accomplishments/specialization/certificate/6KACSVEZGVM4',
     },
     {
-        name: 'JavaScript Certification',
-        description: 'Certified in JavaScript by XYZ University',
-        icon: <DiNodejs style={{ color: 'rgb(247, 223, 30)' }} />,
-      },
-      {
-        name: 'TypeScript Certification',
-        description: 'Certified in TypeScript by ABC University',
-        icon: <DiReact style={{ color: '#3178c6' }} />,
-      },
-      {
-        name: 'JavaScript Certification',
-        description: 'Certified in JavaScript by XYZ University',
-        icon: <DiHtml5 style={{ color: 'rgb(247, 223, 30)' }} />,
-      },
-      {
-        name: 'TypeScript Certification',
-        description: 'Certified in TypeScript by ABC University',
-        icon: <DiPython style={{ color: '#3178c6' }} />,
-      },
+      name: 'JavaScript Certification',
+      description:
+        'The course covers a wide range of topics related to IT, including: Troubleshooting, Networking, Operating systems, System administration, Automation and scripting, and Security.',
+      icon: <SiTypescript style={{ color: '#026e00', fontSize: '48px' }} />,
+      certificationLink:
+        'https://www.coursera.org/account/accomplishments/specialization/certificate/6KACSVEZGVM4',
+    },
+    {
+      name: 'React Certification',
+      description:
+        'The course covers a wide range of topics related to IT, including: Troubleshooting, Networking, Operating systems, System administration, Automation and scripting, and Security.',
+      icon: <DiReact style={{ color: '#61dafb', fontSize: '48px' }} />,
+      certificationLink:
+        'https://www.coursera.org/account/accomplishments/specialization/certificate/6KACSVEZGVM4',
+    },
+    {
+      name: 'HTML5 Certification',
+      description:
+        'The course covers a wide range of topics related to IT, including: Troubleshooting, Networking, Operating systems, System administration, Automation and scripting, and Security.',
+      icon: <DiHtml5 style={{ color: '#E34F26', fontSize: '48px' }} />,
+      certificationLink:
+        'https://www.coursera.org/account/accomplishments/specialization/certificate/6KACSVEZGVM4',
+    },
+    {
+      name: 'Python Certification',
+      description:
+        'The course covers a wide range of topics related to IT, including: Troubleshooting, Networking, Operating systems, System administration, Automation and scripting, and Security.',
+      icon: <DiPython style={{ color: 'rgb(55, 118, 171)', fontSize: '48px' }} />,
+      certificationLink:
+        'https://www.coursera.org/account/accomplishments/specialization/certificate/6KACSVEZGVM4',
+    },
     // Add more certifications here
   ];
 
@@ -128,8 +81,16 @@ const TechCertificationsSkills = () => {
         <li className={s.techIcon} key={index}>
           {certification.icon}
           <div className={s.certificationInfo}>
-            <h3 className={s.certificationName}>{certification.name}</h3>
+            <h1 className={s.certificationName}>{certification.name}</h1>
             <p className={s.certificationDescription}>{certification.description}</p>
+            <a
+              target="_blank"
+              href={certification.certificationLink}
+              className={`${s.certificationLink} ${s.underline}`}
+              style={{ color: 'blue' }}
+            >
+              View Certification
+            </a>
             {/* Add more details and styling for each certification */}
           </div>
         </li>
@@ -139,3 +100,4 @@ const TechCertificationsSkills = () => {
 };
 
 export default TechCertificationsSkills;
+
