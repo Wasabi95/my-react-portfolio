@@ -5,8 +5,7 @@ import {
   DiNodejs,
   DiMongodb,
   DiGit,
-  DiSass,
-  Dipython,
+  DiSass,  
   DiPython,
   DiBootstrap,
   DiCss3,
@@ -16,8 +15,7 @@ import {
   DiMysql,
   DiHtml5,
   DiVisualstudio,
-  DiResponsive,
-  DiNpm,
+  DiResponsive,  
 } from 'react-icons/di';
 import {
   SiTypescript,

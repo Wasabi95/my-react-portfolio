@@ -3,11 +3,9 @@ import programmer from "../../../assets/programmer.svg"
 import { AiFillGithub } from 'react-icons/ai';
 import {
   FaFacebookSquare,
-  FaLinkedinIn,
-  FaTelegramPlane,
+  FaLinkedinIn,  
   FaTwitter 
 } from 'react-icons/fa';
-import Tilt from 'react-parallax-tilt';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const IntroSection = () => {

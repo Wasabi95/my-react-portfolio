@@ -25,6 +25,7 @@
   
   // TechSkillsCertification.module.scss
 
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -37,12 +38,12 @@
 .techIcon {
   width: 300px;
   margin: 20px;
-  padding: 20px;
-  
+  padding: 20px;  
   border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 8px rgba(109, 32, 197, 0.84);
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
+ 
 }
 
 
@@ -78,3 +79,9 @@
   text-decoration: underline;
 }
  
+
+
+.dark .techIcon {
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(109, 32, 197, 0.84);
+}

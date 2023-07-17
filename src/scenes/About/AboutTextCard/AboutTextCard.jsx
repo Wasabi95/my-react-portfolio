@@ -45,11 +45,13 @@ const AboutTextCard = () => {
       Check out my{' '}
       <a
         target="_blank"
+        rel="noreferrer"
         href="https://www.tiktok.com/@wasabithebengalcat?lang=en"
         style={tiktokLinkStyle}
       >
         TikTok
       </a>
+
      
        
         <br />

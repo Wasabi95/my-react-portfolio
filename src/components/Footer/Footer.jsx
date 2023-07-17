@@ -3,13 +3,11 @@ import { AiFillGithub } from 'react-icons/ai';
 import {
   FaFacebookSquare,
   FaLinkedinIn,
-  FaTelegramPlane,
   FaTwitter ,
 } from 'react-icons/fa';
 
 const Footer = () => {
-  // let date = new Date();
-  // let year = date.getFullYear();
+ 
 
   return (
     <div className={s.footer}>

@@ -2,24 +2,10 @@ import React from 'react';
 import s from './TechSkillsCertification.module.scss';
 import {
   DiReact,
-  DiNodejs,
-  DiMongodb,
-  DiGit,
-  DiSass,
-  Dipython,
   DiPython,
-  DiBootstrap,
-  DiCss3,
-  DiFirebase,
-  DiGithub,
-  DiPostgresql,
-  DiMysql,
   DiHtml5,
-  DiVisualstudio,
-  DiResponsive,
-  DiNpm,
 } from 'react-icons/di';
-import { SiTypescript, SiRedux, SiSocketdotio, SiAmazonaws } from 'react-icons/si';
+import { SiTypescript} from 'react-icons/si';
 import { FaGoogle } from 'react-icons/fa';
 
 const TechCertificationsSkills = () => {
@@ -84,13 +70,15 @@ const TechCertificationsSkills = () => {
             <h1 className={s.certificationName}>{certification.name}</h1>
             <p className={s.certificationDescription}>{certification.description}</p>
             <a
-              target="_blank"
-              href={certification.certificationLink}
-              className={`${s.certificationLink} ${s.underline}`}
-              style={{ color: 'blue' }}
-            >
-              View Certification
-            </a>
+                target="_blank"
+                rel="noreferrer"
+                href={certification.certificationLink}
+                className={`${s.certificationLink} ${s.underline}`}
+                style={{ color: 'rgb(231, 40, 231)', fontWeight: '900' }}
+              >
+                View Certification
+              </a>
+
             {/* Add more details and styling for each certification */}
           </div>
         </li>
