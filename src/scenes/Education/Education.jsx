@@ -1,7 +1,6 @@
 import s from '../About/About.module.scss';
 import BaseLayout from '../../layouts/BaseLayout/BaseLayout';
 import education from '../../assets/education (1).svg';
-import programmer from "../../assets/programmer.svg"
 import CertificationsCard from './CertificationsCard/CertificationsCard';
 import TechCertificationsSkills from './TechCertificationSkills/TechCertificationsSkills';
 
