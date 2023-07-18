@@ -3,9 +3,6 @@ import { routes } from '../../routes/BaseRoutes';
 import { Link } from 'react-router-dom';
 
 
-
-
-
 const LOGO = {
   logo_name: "< Andy.C />",
 };
