@@ -1,9 +1,14 @@
+import React from 'react';
 import s from './Projects.module.scss';
 import projects from '../../data/projects';
 import BaseLayout from '../../layouts/BaseLayout/BaseLayout';
 import ProjectCard from './ProjectCard/ProjectCard';
 
+
+
 const Projects = () => {
+ 
+
   return (
     <BaseLayout>
       <div className={s.content}>
@@ -20,8 +25,11 @@ const Projects = () => {
           ))}
         </ul>
       </div>
+      
+     
     </BaseLayout>
   );
 };
 
 export default Projects;
+

@@ -1,13 +1,13 @@
+import React from 'react';
 import s from '../About/About.module.scss';
 import BaseLayout from '../../layouts/BaseLayout/BaseLayout';
 import education from '../../assets/education (1).svg';
 import CertificationsCard from './CertificationsCard/CertificationsCard';
 import TechCertificationsSkills from './TechCertificationSkills/TechCertificationsSkills';
-
-
 import GithubActivity from '../About/GithubActivity/GithubActivity';
 
 const Education = () => {
+
   return (
     <BaseLayout>
       <div className={s.content}>
@@ -20,8 +20,8 @@ const Education = () => {
           </div>
 
           <div className={s.aboutImg}>
-          <img src={education} alt="about" className="img-fluid" />
-         </div>
+            <img src={education} alt="about" className="img-fluid" />
+          </div>
 
         </div>
 
@@ -35,10 +35,11 @@ const Education = () => {
         </h2>
         <GithubActivity />
       </div>
+     
     </BaseLayout>
   );
 };
 
 export default Education;
- 
+
 

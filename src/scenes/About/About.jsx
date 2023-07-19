@@ -1,3 +1,4 @@
+import React from 'react';
 import s from './About.module.scss';
 import BaseLayout from '../../layouts/BaseLayout/BaseLayout';
 import laptopImg from "../../assets/aboutx.png"
@@ -5,7 +6,11 @@ import AboutTextCard from './AboutTextCard/AboutTextCard';
 import TechSkills from './TechSkills/TechSkills';
 import GithubActivity from './GithubActivity/GithubActivity';
 
+
+
 const About = () => {
+  
+
   return (
     <BaseLayout>
       <div className={s.content}>
@@ -18,8 +23,8 @@ const About = () => {
           </div>
 
           <div className={s.aboutImg}>
-          <img src={laptopImg} alt="about" className="img-fluid" />
-         </div>
+            <img src={laptopImg} alt="about" className="img-fluid" />
+          </div>
 
         </div>
 
@@ -33,6 +38,7 @@ const About = () => {
         </h2>
         <GithubActivity />
       </div>
+      
     </BaseLayout>
   );
 };

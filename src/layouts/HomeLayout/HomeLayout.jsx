@@ -10,7 +10,7 @@ const ScrollToTopButton = ({ onClick }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   const handleScroll = () => {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
     setIsVisible(scrollTop > 300); // Show button when scrolled 300px or more
   };
 
